@@ -2,6 +2,10 @@
 variable "tfmodule3" {}
 variable "slmodule3" {}
 
+variable "cluster" {
+  default = "us-central1-a/harness-test"
+}
+
 
 resource "null_resource" "delaymodule3" {
   provisioner "local-exec" {
@@ -19,6 +23,6 @@ output "sleepoutputModule3" {
 }
 
 output "clusterName" {
-  value = "us-central1-a/harness-test"
+  value = var.cluster
 }
 
