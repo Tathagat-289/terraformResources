@@ -13,6 +13,10 @@ provider "aws" {
   region = "us-east-1"
 }
 
+terraform {
+  backend "local" {}
+}
+
 resource "aws_instance" "ec2_instance_test" {
   ami           = "ami-0663143d1f1caa3bf"
   instance_type = "t2.nano"
