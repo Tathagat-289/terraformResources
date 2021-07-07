@@ -2,6 +2,9 @@
 variable "tfmodule3" {}
 variable "slmodule3" {}
 
+terraform {
+  backend "local" {}
+}
 
 resource "null_resource" "delaymodule3" {
   provisioner "local-exec" {
