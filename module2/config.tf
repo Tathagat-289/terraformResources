@@ -1,6 +1,5 @@
 
 variable "tfversion" {}
-variable "sleep" {}
 variable "sleep" {
   type = number
 }
