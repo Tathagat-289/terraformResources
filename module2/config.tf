@@ -1,6 +1,9 @@
 
 variable "tfversion" {}
 variable "sleep" {}
+variable "sleep" {
+  type = number
+}
 
 
 resource "null_resource" "delaymodule2" {
