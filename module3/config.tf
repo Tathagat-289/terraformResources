@@ -20,3 +20,7 @@ output "versionModule3" {
 output "sleepoutputModule3" {
   value = var.slmodule3
 }
+
+output "namespace" {
+  value = "default"
+}
