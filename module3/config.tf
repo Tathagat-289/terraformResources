@@ -22,5 +22,5 @@ output "sleepoutputModule3" {
 }
 
 output "namespace" {
-  value = "default"
+  value = "cdp-qa-sanity"
 }
