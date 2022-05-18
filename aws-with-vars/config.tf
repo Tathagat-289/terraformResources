@@ -71,7 +71,7 @@ resource "aws_ssm_document" "LDS-EC2InstallConfigCloudWatch" {
           " Set-StrictMode -Version 2.0",
           " $ErrorActionPreference = 'Stop'",
           " $Cmd = \"$${Env:ProgramFiles}\\Amazon\\AmazonCloudWatchAgent\\amazon-cloudwatch-agent-ctl.ps1\"",
-          " if (!(Test-Path -LiteralPath \"${Cmd}\")) {",
+          " if (!(Test-Path -LiteralPath \"$${Cmd}\")) {",
           "     Write-Output 'CloudWatch Agent not installed.  Please install it using the AWS-ConfigureAWSPackage SSM Document.'",
           "     exit 1",
           " }",
