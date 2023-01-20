@@ -1,7 +1,7 @@
 variable "op_module_var" {}
 variable "op_module_list_var1" {
   type    = list(string)
-  default = ["us-west-1a"]
+  default = ["us-west-1a","us-east-1a"]
 }
 
 
