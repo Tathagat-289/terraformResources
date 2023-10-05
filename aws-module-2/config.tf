@@ -19,13 +19,13 @@ resource "null_resource" "delaymodule3" {
   }
 }
 
-#resource "aws_instance" "ec2_instance_test" {
-#  ami           = "ami-0bb29480f5276e843"
-#  instance_type = "t2.nano"
-#  tags = {
-#    Name = var.tag
-#  }
-#}
+resource "aws_instance" "ec2_instance_test" {
+  ami           = "ami-0bb29480f5276e843"
+  instance_type = "t2.nano"
+  tags = {
+    Name = var.tag
+  }
+}
 
 #resource "aws_instance" "ec2_instance_test_new" {
 #  ami           = "ami-06f913a82bea1dc7a"
