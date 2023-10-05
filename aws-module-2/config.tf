@@ -15,7 +15,7 @@ provider "aws" {
 
 resource "null_resource" "delaymodule3" {
   provisioner "local-exec" {
-    command = "tfmodule3"
+    command = "echo hello"
     interpreter = ["/bin/sleep"]
   }
 }
