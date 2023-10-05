@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "ec2_instance_test" {
-  ami           = "ami-0663143d1f1caa3bf"
+  ami           = "ami-06f913a82bea1dc7a"
   instance_type = "t2.nano"
   tags = {
     Name = var.tag
@@ -22,7 +22,7 @@ resource "aws_instance" "ec2_instance_test" {
 }
 
 resource "aws_instance" "ec2_instance_test_new" {
-  ami           = "ami-0663143d1f1caa3bf"
+  ami           = "ami-06f913a82bea1dc7a"
   instance_type = "t2.nano"
   tags = {
     Name = var.tag
