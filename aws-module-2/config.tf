@@ -1,16 +1,16 @@
-variable "access_key" {}
-
-variable "secret_key" {}
-
-
+#variable "access_key" {}
+#
+#variable "secret_key" {}
+#
+#
 variable "tag" {
   default = "terragrunt-bugbash"
 }
 
 provider "aws" {
-  access_key = var.access_key
-  secret_key = var.secret_key
-  region = "us-east-1"
+#  access_key = var.access_key
+#  secret_key = var.secret_key
+#  region = "us-east-1"
 }
 
 resource "aws_instance" "ec2_instance_test" {
@@ -30,17 +30,17 @@ resource "aws_instance" "ec2_instance_test_new" {
 }
 
 
-terraform {
-  backend "s3" {
-    # put access_key and secret key from backendconfig file
-    # Replace this with your bucket name!
-    bucket         = "terraform-state-tathagat-test"
-    region         = "us-east-1"
-    key = "tf/terraform.tfstate"
-    # Replace this with your DynamoDB table name!
-    encrypt        = true
-  }
-}
+#terraform {
+#  backend "s3" {
+#    # put access_key and secret key from backendconfig file
+#    # Replace this with your bucket name!
+#    bucket         = "terraform-state-tathagat-test"
+#    region         = "us-east-1"
+#    key = "tf/terraform.tfstate"
+#    # Replace this with your DynamoDB table name!
+#    encrypt        = true
+#  }
+#}
 
 
 output "tag" {
