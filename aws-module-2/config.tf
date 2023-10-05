@@ -8,26 +8,33 @@ variable "tag" {
 }
 
 provider "aws" {
-#  access_key = var.access_key
-#  secret_key = var.secret_key
+  #  access_key = var.access_key
+  #  secret_key = var.secret_key
   region = "eu-north-1"
 }
 
-resource "aws_instance" "ec2_instance_test" {
-  ami           = "ami-0bb29480f5276e843"
-  instance_type = "t2.nano"
-  tags = {
-    Name = var.tag
+resource "null_resource" "delaymodule3" {
+  provisioner "local-exec" {
+    command = tfmodule3
+    interpreter = ["/bin/sleep"]
   }
 }
 
-resource "aws_instance" "ec2_instance_test_new" {
-  ami           = "ami-06f913a82bea1dc7a"
-  instance_type = "t2.nano"
-  tags = {
-    Name = var.tag
-  }
-}
+#resource "aws_instance" "ec2_instance_test" {
+#  ami           = "ami-0bb29480f5276e843"
+#  instance_type = "t2.nano"
+#  tags = {
+#    Name = var.tag
+#  }
+#}
+
+#resource "aws_instance" "ec2_instance_test_new" {
+#  ami           = "ami-06f913a82bea1dc7a"
+#  instance_type = "t2.nano"
+#  tags = {
+#    Name = var.tag
+#  }
+#}
 
 
 #terraform {
