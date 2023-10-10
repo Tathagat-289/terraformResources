@@ -1,6 +1,6 @@
 # Define a provider block (optional, depends on your project)
 provider "aws" {
-  region = "eu-north-1"  # Replace with your desired AWS region
+  region = "us-east-1"  # Replace with your desired AWS region
 }
 
 resource "aws_instance" "example_instance" {
