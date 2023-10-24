@@ -1,7 +1,7 @@
 environment:
   name: remotee2
   identifier: remotee2
-  accountId: kmpySmUISimoRrJL6NL73w
+  description: on other branch
+  type: Production
   orgIdentifier: default
   projectIdentifier: Project1
-  type: Production
