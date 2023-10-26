@@ -1,0 +1,7 @@
+environment:
+  name: remotee2
+  identifier: remotee2
+  accountId: kmpySmUISimoRrJL6NL73w
+  orgIdentifier: default
+  projectIdentifier: Project1
+  type: PreProduction
