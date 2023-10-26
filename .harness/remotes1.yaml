@@ -1,0 +1,5 @@
+service:
+  name: remotes1
+  identifier: remotes1
+  orgIdentifier: default
+  projectIdentifier: Project1
