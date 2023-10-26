@@ -1,7 +1,26 @@
 environment:
   name: remotee1
   identifier: remotee1
-  accountId: kmpySmUISimoRrJL6NL73w
+  type: Production
   orgIdentifier: default
   projectIdentifier: Project1
-  type: Production
+  variables:
+    - name: envvar1
+      type: String
+      value: <+input>
+      description: ""
+      required: false
+  overrides:
+    manifests:
+      - manifest:
+          identifier: aaaa
+          type: Values
+          spec:
+            store:
+              type: Github
+              spec:
+                connectorRef: account.tfpersonal
+                gitFetchType: Branch
+                paths:
+                  - aaaaa
+                branch: <+input>
