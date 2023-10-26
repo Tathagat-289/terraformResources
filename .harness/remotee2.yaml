@@ -4,4 +4,17 @@ environment:
   type: Production
   orgIdentifier: default
   projectIdentifier: Project1
-  overrides: {}
+  overrides:
+    manifests:
+      - manifest:
+          identifier: aaa
+          type: Values
+          spec:
+            store:
+              type: Github
+              spec:
+                connectorRef: account.wingstf
+                gitFetchType: Branch
+                paths:
+                  - aaa
+                branch: aaa
