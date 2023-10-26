@@ -1,7 +1,0 @@
-environment:
-  name: remotee1
-  identifier: remotee1
-  description: some description
-  type: Production
-  orgIdentifier: default
-  projectIdentifier: Project1
