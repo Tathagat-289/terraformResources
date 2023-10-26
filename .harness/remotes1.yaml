@@ -3,3 +3,12 @@ service:
   identifier: remotes1
   orgIdentifier: default
   projectIdentifier: Project1
+  serviceDefinition:
+    spec:
+      variables:
+        - name: servicevar
+          type: String
+          description: ""
+          required: false
+          value: <+input>
+    type: Kubernetes
