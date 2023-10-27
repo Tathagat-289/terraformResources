@@ -11,4 +11,9 @@ service:
           description: ""
           required: false
           value: <+input>
+        - name: sasss
+          type: String
+          description: ""
+          required: false
+          value: sdfff
     type: Kubernetes
