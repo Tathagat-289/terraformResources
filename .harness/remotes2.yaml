@@ -11,4 +11,19 @@ service:
           description: ""
           required: false
           value: <+input>
+      manifests:
+        - manifest:
+            identifier: sadfreg
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: account.wingstf
+                  gitFetchType: Branch
+                  paths:
+                    - trhtyrh
+                  branch: ergtrbhtr
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
     type: Kubernetes
