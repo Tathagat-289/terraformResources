@@ -11,4 +11,9 @@ service:
           description: ""
           required: false
           value: <+input>
+        - name: servicevar2
+          type: String
+          description: ""
+          required: false
+          value: servicevar2
     type: Kubernetes
