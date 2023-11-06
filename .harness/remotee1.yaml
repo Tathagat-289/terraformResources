@@ -1,13 +1,9 @@
 environment:
   name: remotee1
   identifier: remotee1
+  tags:
+    remote: remote
   type: Production
   orgIdentifier: default
   projectIdentifier: Project1
-  variables:
-    - name: remotes1branch
-      type: String
-      value: <+input>
-      description: ""
-      required: false
   storeType: REMOTE
