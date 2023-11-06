@@ -1,0 +1,14 @@
+template:
+  name: remotestepanotherbranch
+  identifier: remotestepanotherbranch
+  versionLabel: "1"
+  type: Step
+  projectIdentifier: Project1
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: K8sRollingDeploy
+    timeout: 10m
+    spec:
+      skipDryRun: false
+      pruningEnabled: false
