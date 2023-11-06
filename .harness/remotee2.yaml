@@ -1,7 +1,13 @@
 environment:
   name: remotee2
   identifier: remotee2
-  accountId: kmpySmUISimoRrJL6NL73w
+  type: PreProduction
   orgIdentifier: default
   projectIdentifier: Project1
-  type: PreProduction
+  variables:
+    - name: remotes1branch
+      type: String
+      value: <+input>
+      description: ""
+      required: false
+  storeType: REMOTE
