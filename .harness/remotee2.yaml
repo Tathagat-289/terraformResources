@@ -10,17 +10,4 @@ environment:
       value: <+input>
       description: ""
       required: false
-  overrides:
-    manifests:
-      - manifest:
-          identifier: remotee2manifest
-          type: Values
-          spec:
-            store:
-              type: Github
-              spec:
-                connectorRef: account.tfpersonal
-                gitFetchType: Branch
-                paths:
-                  - aaaaa
-                branch: <+input>
+  storeType: REMOTE
