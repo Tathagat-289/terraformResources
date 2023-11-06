@@ -5,22 +5,9 @@ environment:
   orgIdentifier: default
   projectIdentifier: Project1
   variables:
-    - name: envvar1
+    - name: remotee1branchvar
       type: String
       value: <+input>
       description: ""
       required: false
-  overrides:
-    manifests:
-      - manifest:
-          identifier: aaaaa
-          type: Values
-          spec:
-            store:
-              type: Github
-              spec:
-                connectorRef: account.tfpersonal
-                gitFetchType: Branch
-                paths:
-                  - aaaaa
-                branch: <+input>
+  storeType: REMOTE
