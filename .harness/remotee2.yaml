@@ -1,13 +1,9 @@
 environment:
   name: remotee2
   identifier: remotee2
+  tags:
+    remote: remote
   type: PreProduction
   orgIdentifier: default
   projectIdentifier: Project1
-  variables:
-    - name: remotes1branch
-      type: String
-      value: <+input>
-      description: ""
-      required: false
   storeType: REMOTE
