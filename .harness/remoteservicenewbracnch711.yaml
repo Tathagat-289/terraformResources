@@ -10,5 +10,5 @@ service:
           type: String
           description: ""
           required: false
-          value: cdfvdgf
+          value: <+input>
     type: Kubernetes
