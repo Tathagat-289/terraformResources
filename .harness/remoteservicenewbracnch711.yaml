@@ -10,5 +10,5 @@ service:
           type: String
           description: ""
           required: false
-          value: dfevbg
+          value: <+input>
     type: Kubernetes
