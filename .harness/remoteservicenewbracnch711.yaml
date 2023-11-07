@@ -3,3 +3,6 @@ service:
   identifier: remoteservicenewbracnch711
   orgIdentifier: default
   projectIdentifier: Project1
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes
