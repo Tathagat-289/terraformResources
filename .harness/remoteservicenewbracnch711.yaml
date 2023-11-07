@@ -4,5 +4,11 @@ service:
   orgIdentifier: default
   projectIdentifier: Project1
   serviceDefinition:
-    spec: {}
+    spec:
+      variables:
+        - name: var1
+          type: String
+          description: ""
+          required: false
+          value: asddd
     type: Kubernetes
