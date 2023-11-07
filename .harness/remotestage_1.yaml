@@ -19,7 +19,6 @@ template:
       service:
         serviceRef: <+input>
         serviceInputs: <+input>
-        gitBranch: <+input>
       execution:
         steps:
           - step:
