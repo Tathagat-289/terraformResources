@@ -30,7 +30,8 @@ pipeline:
                           spec:
                             connectorRef: <+input>
             deployToAll: false
-            infrastructureDefinitions: <+input>
+            infrastructureDefinitions:
+              - identifier: infraforunlineenv
           execution:
             steps:
               - step:
