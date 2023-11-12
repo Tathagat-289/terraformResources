@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: infraremote
+  identifier: infraremote
+  orgIdentifier: default
+  projectIdentifier: Project1
+  environmentRef: test3
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: account.k8sdummy
+    namespace: sss
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
