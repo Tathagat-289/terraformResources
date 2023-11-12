@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: remotei1
+  identifier: remotei1
+  orgIdentifier: default
+  projectIdentifier: Project1
+  environmentRef: remotee1
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: account.k8sdummy
+    namespace: default
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
