@@ -15,10 +15,10 @@ pipeline:
           service:
             serviceRef: s1
           environment:
-            environmentRef: remotee1
+            environmentRef: test3
             deployToAll: false
             infrastructureDefinitions:
-              - identifier: remotei1
+              - identifier: infrainline
           execution:
             steps:
               - step:
