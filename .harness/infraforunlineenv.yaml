@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: infraforunlineenv
+  identifier: infraforunlineenv
+  orgIdentifier: default
+  projectIdentifier: Project1
+  environmentRef: testEnv
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: account.k8sdummy
+    namespace: dddd
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
