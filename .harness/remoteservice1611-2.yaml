@@ -3,3 +3,6 @@ service:
   identifier: remoteservice16112
   orgIdentifier: default
   projectIdentifier: Project1
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes
