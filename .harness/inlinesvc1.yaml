@@ -1,0 +1,5 @@
+service:
+  name: inlinesvc1
+  identifier: inlinesvc1
+  orgIdentifier: default
+  projectIdentifier: Project1
