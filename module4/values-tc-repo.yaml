@@ -1,1 +1,3 @@
+tag: latest
+repository: nginx
 replicaCount: 3
