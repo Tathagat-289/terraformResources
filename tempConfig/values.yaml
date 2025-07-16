@@ -3,7 +3,7 @@ replicas: 1
 
 image: <+artifact.image>
 pullPolicy: Always
-dockercfg: cmFuZG9t
+dockercfg: eyJodHRwczovL2luZGV4LmRvY2tlci5pby92Mi8iOnsidXNlcm5hbWUiOiJoYXJuZXNzZGV2IiwicGFzc3dvcmQiOiJyYW5kb20ifX0=
 createNamespace: false
 namespace: <+infra.namespace>
 # Service Type allow you to specify what kind of service you want.
