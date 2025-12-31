@@ -2,5 +2,5 @@ overrides:
   variables:
     - name: abcc
       type: String
-      value: ccccc
+      value: <+input>
       required: false
