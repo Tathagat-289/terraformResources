@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: i1
+  identifier: i1
+  orgIdentifier: default
+  projectIdentifier: ciproject
+  environmentRef: e5
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: cik8s
+    namespace: harness-delegate-ng
+    releaseName: release-tc
+  allowSimultaneousDeployments: false
