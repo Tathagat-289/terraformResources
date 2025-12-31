@@ -3,3 +3,51 @@ service:
   identifier: remoteservice
   orgIdentifier: default
   projectIdentifier: ciproject
+  serviceDefinition:
+    spec:
+      artifacts:
+        primary:
+          primaryArtifactRef: artifact_1
+          sources:
+            - spec:
+                connectorRef: account.personal
+                imagePath: library/nginx
+                tag: latest
+              identifier: artifact_1
+              type: DockerRegistry
+            - spec:
+                connectorRef: account.personal
+                imagePath: library/nginx
+                tag: latest
+              identifier: artifact_2
+              type: DockerRegistry
+        sidecars:
+          - sidecar:
+              spec:
+                connectorRef: account.personal
+                imagePath: library/nginx
+                tag: latest
+              identifier: sidecar_1
+              type: DockerRegistry
+      manifests:
+        - manifest:
+            identifier: k8s_manifest
+            type: K8sManifest
+            spec:
+              store:
+                type: Git
+                spec:
+                  connectorRef: harness0git
+                  gitFetchType: Branch
+                  paths:
+                    - abc
+                  branch: prod_env
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+      variables:
+        - name: a
+          type: String
+          description: ""
+          required: false
+          value: <+input>.selectOneFrom(a,b)
+    type: Kubernetes
