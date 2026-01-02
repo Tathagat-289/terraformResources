@@ -44,10 +44,4 @@ service:
                   branch: prod_env
               skipResourceVersioning: false
               enableDeclarativeRollback: false
-      variables:
-        - name: a
-          type: String
-          description: ""
-          required: false
-          value: <+input>.selectOneFrom(a,b)
     type: Kubernetes
